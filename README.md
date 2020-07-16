@@ -10,7 +10,7 @@ We also add a `labelImg_yolov3_argmentation.py` script for training dataset augm
 
 The YOLOv3 style label files are obtained by labelImg at https://github.com/tzutalin/labelImg.
 
-The original README.md file are as following:
+The contents of original README.md file are as following:
 ---
 
 # PyTorch-YOLOv3
