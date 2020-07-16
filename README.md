@@ -1,8 +1,13 @@
 # Abstract
+
 This repo is modified from https://github.com/eriklindernoren/PyTorch-YOLOv3.
+
 We adjust the source code to make it work with both python2.7 and python3.8 in order to intergrate better with ROS.
+
 The Anaconda environment setup for our test are under `anaconda_envs` folder. 
+
 We also add a `labelImg_yolov3_argmentation.py` script for training dataset augmentation.
+
 The YOLOv3 style label files are obtained by labelImg at https://github.com/tzutalin/labelImg.
 
 The original README.md file are as following:
