@@ -10,6 +10,28 @@ We also add a `labelImg_yolov3_argmentation.py` script for training dataset augm
 
 The YOLOv3 style label files are obtained by labelImg at https://github.com/tzutalin/labelImg.
 
+# Quick Start
+
+1. label your images using labelImg, put all images, labels, and `classes.names` file in your own dataset folder (any empty folder)
+
+2. multiple your data by augmentation, copy `labelImg_yolov3_argmentation.py` to your dataset folder and run under the folder:
+
+```
+python labelImg_yolov3_argmentation.py
+```
+you will get a lot of new images and labels, put them in the right path and change path in `custom.data` file
+
+train:
+```
+python3 train.py --model_def data/cov2/yolov3-custom.cfg --data_config data/cov2/custom.data --epochs 200 --batch_size 10 --pretrained_weights weights/darknet53.conv.74
+```
+
+detect:
+```
+python3 detect.py --model_def data/cov2/yolov3-custom.cfg --weights_path data/cov2/yolov3_ckpt_324.pth --class_path data/cov2/classes.names --image_folder assets --outputs_folder outputs 
+```
+
+
 The contents of original README.md file are as following:
 ---
 

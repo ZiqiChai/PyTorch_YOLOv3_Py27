@@ -791,4 +791,5 @@ jitter=.3
 ignore_thresh = .7
 truth_thresh = 1
 random=1
-" > yolov3-custom.cfg
+" > $2
+#"> yolov3-custom.cfg
